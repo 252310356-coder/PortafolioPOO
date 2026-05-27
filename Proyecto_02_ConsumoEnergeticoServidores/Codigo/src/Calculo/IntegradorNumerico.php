@@ -1,0 +1,74 @@
+<?php
+namespace App\Calculo;
+class IntegradorNumerico {
+ private float $inicio; // Límite inferior (segundos)
+ private float $fin; // Límite superior (segundos)
+ private int $pasos; // Precisión (n subintervalos)
+ private int $tipoCarga; // Tipo de carga (1: Normal, 2: Constante, 3: Fuerte)
+ public function __construct(float $a, float $b, int $n , int $tipoCarga) {
+ if ($a >= $b) {
+
+ throw new \InvalidArgumentException("El tiempo inicial debe ser menor al
+final.");
+
+ }
+ if ($n <= 0 or $n >= 1000000) {
+
+ throw new \InvalidArgumentException("La precisión (n) debe ser un número
+positivo y menor a 1000000.");
+
+ }
+
+ $this->inicio = $a;
+ $this->fin = $b;
+ $this->pasos = $n;
+ $this->tipoCarga = $tipoCarga;
+
+ }
+
+ /**
+ * Modela la función de potencia P(t) = t^2 + 2t (Ejemplo de arga ccreciente)
+ * En informática, esto representaría los Watts consumidos.
+ */
+
+ private function funcionPotencia(float $t): float {
+ switch ($this->tipoCarga) {
+ case 1: // Normal: P(t) = 2t + 5
+ return 2 * $t + 5;
+ case 2: // Constante: P(t) = 5
+ return 5;
+ case 3: // Fuerte: P(t) = t^2
+ return pow($t, 2);
+ case 4: // Formula original: P(t) = t^2 + 2t
+ return pow($t, 2) + 2 * $t;
+ }
+    return 0; // Valor por defecto (no debería ocurrir)
+}
+
+ public function calcularEnergiaTotal(): float {
+ $h = ($this->fin - $this->inicio) / $this->pasos;
+
+ $suma = ($this->funcionPotencia($this->inicio) + $this->funcionPotencia($this->fin)) / 2;
+
+ for ($i = 1; $i < $this->pasos; $i++) {
+ $t_i = $this->inicio + $i * $h;
+ $suma += $this->funcionPotencia($t_i);
+ }
+
+ return $suma * $h;
+    }
+    
+    public function aumentoEnergia(): void {
+    $n_values = [10, 100, 1000];
+    foreach ($n_values as $n) {
+        $integrador = new IntegradorNumerico(
+            $this->inicio,
+            $this->fin,
+            $n,
+            $this->tipoCarga
+        );
+        $energia = $integrador->calcularEnergiaTotal();
+        echo "<tr> <td> $this->inicio </td> <td> $this->fin </td> <td> $n </td> <td> " . number_format($energia, 7) . " </td> </tr>";
+    }
+    }
+}
