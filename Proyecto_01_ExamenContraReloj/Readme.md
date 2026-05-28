@@ -48,6 +48,7 @@ Asegurarse de que el servidor Apache esté activo en el Panel de Control de XAMP
 Abrir el navegador y navegar a la dirección: http://localhost/nombre_de_tu_carpeta/index.php.
 
 8. Reflexión personal
+
 ¿Qué aprendí?
 Aprendí a implementar el tipado estricto en PHP, lo cual ayuda a prevenir errores de lógica desde la definición de la clase, y a integrar clases nativas como DateTime.
 
