@@ -24,11 +24,7 @@ Este proyecto automatiza el cálculo del consumo eléctrico para:
 * **Abstracción**: Implementación de la lógica como una "caja negra" donde el usuario solo interactúa con los parámetros de entrada.
 * **Algoritmos Numéricos**: Aplicación de la Regla del Trapecio para aproximaciones matemáticas.
 
-## 6. Capturas de pantalla
-*(Incluir aquí las imágenes del funcionamiento del proyecto)*
-1. **Formulario de entrada**: Configuración de tiempos y precisión.
-2. **Ejecución**: Procesamiento de los datos por la clase lógica.
-3. **Resultados**: Visualización de los Joules consumidos y la tabla comparativa de precisión.
+## 6. Capturas de pantalla estan a parte
 
 ## 7. Instrucciones de ejecución
 1.  **Copiar carpeta**: Colocar el proyecto dentro del directorio `htdocs` de XAMPP.

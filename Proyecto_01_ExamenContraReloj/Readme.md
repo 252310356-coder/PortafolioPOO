@@ -33,12 +33,7 @@ Uso de clases predefinidas (DateTime).
 
 Inclusión de archivos (require_once).
 
-6. Capturas de pantalla
-(Aquí debes insertar tus propias imágenes, te dejo los marcadores listos)
-
-[INSERTAR AQUÍ: Captura del código en Paquete.php y Sensor.php]
-[INSERTAR AQUÍ: Captura del navegador ejecutando index.php]
-[INSERTAR AQUÍ: Captura del error al intentar acceder a la propiedad privada]
+## 6. Capturas de pantalla estan a parte
 
 7. Instrucciones de ejecución
 Copiar la carpeta del proyecto dentro del directorio htdocs de tu instalación de XAMPP.
