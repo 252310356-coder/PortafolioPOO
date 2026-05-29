@@ -33,7 +33,9 @@ Uso de clases predefinidas (DateTime).
 
 Inclusión de archivos (require_once).
 
-## 6. Capturas de pantalla estan a parte
+## 6. Capturas de pantalla
+*Resultados del programa  ***
+![alt text](image.png)
 
 7. Instrucciones de ejecución
 Copiar la carpeta del proyecto dentro del directorio htdocs de tu instalación de XAMPP.

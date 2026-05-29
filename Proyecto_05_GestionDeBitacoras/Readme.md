@@ -22,7 +22,15 @@ El proyecto soluciona la necesidad de:
 *   **Seguridad y Sanitización:** Implementación de la función `htmlspecialchars()` para transformar caracteres especiales entrantes en entidades HTML, evitando que usuarios maliciosos inyecten y ejecuten código dentro del servidor o del archivo de registro.
 *   **Validación de Formularios:** Procesamiento de variables globales `$_POST` asegurando la correcta recepción y filtrado de los datos antes de guardarlos.
 
-## 6. Capturas de pantalla estan a parte
+## 6. Capturas de pantalla
+**Formulario**
+![alt text](image.png)
+**Guardar**
+![alt text](image-1.png)
+**Actividades ya registradas**
+![alt text](image-2.png)
+**Archivo bitacora.txt**
+![alt text](image-3.png)
 
 ## 7. Instrucciones de ejecución
 1.  Mover o copiar la carpeta del proyecto dentro del directorio de despliegue `htdocs` en tu servidor local XAMPP.

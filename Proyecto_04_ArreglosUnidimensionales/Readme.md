@@ -27,8 +27,15 @@ El proyecto soluciona la necesidad de:
     * `count()`: Para el cálculo de promedios.
 * **Iteración**: Uso de ciclos para renderizar la lista de productos agregados.
 
-## 6. Capturas de pantalla estan a parte
-
+## 6. Capturas de pantalla
+**Formulario**
+![alt text](image.png)
+**Agregar producto**
+![alt text](image-1.png)
+**Luego de subir varios produtos a mano (Se puede hacer de forma indefinida)**
+**Procesamiento del inventario**
+![alt text](image-2.png)
+**Vaciar inventario hara que todos los productos desaparezcan para introducir nuevos sin estos**
 
 ## 7. Instrucciones de ejecución
 1.  Asegúrate de tener **XAMPP** instalado y el servicio **Apache** iniciado.

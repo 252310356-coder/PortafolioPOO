@@ -1,8 +1,12 @@
 Fecha: 2026-05-19
 Actividad: Cambie datos de la presentacion
-Responsable: Emilianjo
+Responsable: Emiliano
 -------------------------
 Fecha: 2026-05-19
 Actividad: Hice la presentacion de mañana
 Responsable: Charly
+-------------------------
+Fecha: 2026-05-20
+Actividad: Voy a hacer la presentacion de mañana
+Responsable: Alan
 -------------------------
